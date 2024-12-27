@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<div class="d-flex flex-column text-center mb-5">
+            <h4 class="text-secondary mb-3">Uy hayvonlari blogi</h4>
+            <a href="{% url 'blogdetail' x.id %}"></a><h1 class="display-4 m-0"><span class="text-primary">{{x.name}}</span></h1>
+        </div>
+        <div class="row pb-3">
+            <div class="col-lg-4 mb-4">
+                <div class="card border-0 mb-2">
+                    <img class="card-img-top" src="{{x.img.url}}" alt="">
+                    <div class="card-body bg-light p-4">
+                        <h4 class="card-title text-truncate"></h4>
+                        <div class="d-flex mb-3">
+                            <small class="mr-2"><i class="fa fa-user text-muted"></i> adminstrator</small>
+                            <small class="mr-2"><i class="fa fa-folder text-muted"></i> veb dizayn</small>
+                            <small class="mr-2"><i class="fa fa-comments text-muted"></i> 15</small>
+                        </div>
+                        <p>{{x.bio}}</p>
+                        <a class="font-weight-bold" href="">Batafsil O'qing</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+{% endblock content %}

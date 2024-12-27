@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+ <div class="row align-items-center">
+            <div class="col-lg-5">
+                <img class="img-fluid w-100" src="{{x.img.url}}" alt="">
+            </div>
+            <div class="col-lg-7 py-5 py-lg-0 px-3 px-lg-5">
+                <h4 class="text-secondary mb-3">Nima uchun Bizni Tanlashingiz Kerak?</h4>
+                <a href="{% url 'featuresdetail' x.id %}"></a><h1 class="display-4 mb-4"><span class="text-primary"></span>{{x.name}}</h1>
+                <p class="mb-4">{{x.bio}}</p>
+                <div class="row py-2">
+                    <div class="col-6">
+                        <div class="d-flex align-items-center mb-4">
+                            <h1 class="flaticon-cat font-weight-normal text-secondary m-0 mr-3"></h1>
+                            <h5 class="text-truncate m-0">Sanoatdagi Eng Yaxshi</h5>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="d-flex align-items-center mb-4">
+                            <h1 class="flaticon-doctor font-weight-normal text-secondary m-0 mr-3"></h1>
+                            <h5 class="text-truncate m-0">Favqulodda Xizmatlar</h5>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="d-flex align-items-center">
+                            <h1 class="flaticon-care font-weight-normal text-secondary m-0 mr-3"></h1>
+                            <h5 class="text-truncate m-0">Maxsus G'amxo'rlik</h5>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="d-flex align-items-center">
+                            <h1 class="flaticon-dog font-weight-normal text-secondary m-0 mr-3"></h1>
+                            <h5 class="text-truncate m-0">Mijozlarga Qo'llab-quvvatlash</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+{% endblock content %}

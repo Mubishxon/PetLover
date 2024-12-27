@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<div class="carousel-item active">
+                    <img class="w-100" src="{{x.img.url}}" alt="Image">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="p-3" style="max-width: 900px;">
+                            <h3 class="text-white mb-3 d-none d-sm-block">Eng Yaxshi Uy Hayvonlari Xizmatlari</h3>
+                            <a href="{% url 'carouseldetail' x.id %}"></a><h1 class="display-3 text-white mb-3">{{x.name}}</h1>
+                            <h5 class="text-white mb-3 d-none d-sm-block"></h5>
+                            <a href="" class="btn btn-lg btn-primary mt-3 mt-md-4 px-4">Hozir Buyurtma Qiling</a>
+                            <a href="" class="btn btn-lg btn-secondary mt-3 mt-md-4 px-4">Ko'proq O'rganing</a>
+                        </div>
+                    </div>
+                </div>
+
+{% endblock content %}

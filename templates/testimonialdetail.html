@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<div class="container p-0 py-5">
+            <div class="d-flex flex-column text-center mb-5">
+                <h4 class="text-secondary mb-3">Fikr-mulohaza</h4>
+                <a href=" url 'testimonialdetail' x.id "></a><h1 class="display-4 m-0">{{x.name}}<span class="text-primary"></span></h1>
+            </div>
+            <div class="owl-carousel testimonial-carousel">
+                <div class="bg-white mx-3 p-4">
+                    <div class="d-flex align-items-end mb-3 mt-n4 ml-n4">
+                        <img class="img-fluid" src="{{x.img.url}}" style="width: 80px; height: 80px;" alt="">
+                        <div class="ml-3">
+                            <h5>Aziz</h5>
+                            <i>Moliya mutaxassisi</i>
+                        </div>
+                    </div>
+                    <p class="m-0">{{x.bio}}</p>
+                </div>
+            </div>
+        </div>
+{% endblock content %}
